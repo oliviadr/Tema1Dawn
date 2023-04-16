@@ -1,0 +1,63 @@
+.card {
+  width: 320px;
+  margin: 20px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  }
+  
+  .card-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  }
+  .card {
+    transition: all 0.2s ease-in-out;
+    
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    }
+  }
+  .card-content {
+  padding: 20px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  }
+  
+  .card-title {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "Lucida Console";
+  color: rgb(46, 179, 251);
+  }
+  
+  .card-description {
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-family: "Lucida Console";
+  flex-grow: 1;
+  }
+  
+  .card-button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: rgb(4, 53, 4);
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  align-self: flex-end;
+  }

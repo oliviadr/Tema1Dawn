@@ -1,0 +1,73 @@
+.title-panel {
+  position: relative;
+  height: 500px;
+  
+  &__background-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('/assets/images/bg.jpg');
+    background-size: cover;
+    filter: brightness(0.5); /* Add a brightness filter */
+    z-index: -1; /* Send it to the back */
+  }
+  
+  &__content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: rgb(254, 251, 251);
+    text-align: center;
+  }
+  
+  &__title {
+    font-size: 35px;
+    font-weight: bold;
+    margin: 0;
+    font-family: "Lucida Console";
+  }
+  
+  &__title--big {
+    font-size: 100px;
+    font-weight: bold;
+    margin: 0.5rem 0;
+    text-decoration:underline 1px;
+    text-underline-position: under;
+    text-transform: uppercase;
+    font-family: "Lucida Console"
+  }
+  
+  &__description {
+    font-size: 20px;
+    margin: 1.5rem 0;
+    max-width: 50rem;
+    line-height: 1.5;
+    font-family: "Lucida Console";
+  }
+  
+  &__button {
+    padding: 1rem 2rem;
+    background-color: white;
+    color: rgb(4, 53, 4);
+    border: none;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out; /* Add a transition */
+  
+    &:hover {
+      transform: translateY(-0.2rem);
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    }
+    
+    &:active {
+      transform: translateY(0);
+      box-shadow: none;
+    }
+  }
+}

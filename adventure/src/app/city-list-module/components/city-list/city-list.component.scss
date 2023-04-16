@@ -1,0 +1,31 @@
+.city-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-family: "Lucida Console";
+  }
+  
+  .city-card {
+    margin: 20px;
+    color: rgb(4, 53, 4);
+  }
+
+  .title-panel{
+    
+    color: rgb(4, 53, 4);
+    opacity:90%;
+    text-align: center;
+    text-decoration:underline 1px;
+    text-underline-position: under;
+    text-underline-offset: 10px;
+    font-family: "Lucida Console";
+   font-weight: bold;
+  }
+
+  .panel{
+    padding-top: 5%;
+    background-color: rgb(242, 246, 247);
+    margin-left: 5%;
+    margin-right: 5%;
+  }
